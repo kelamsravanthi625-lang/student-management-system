@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Database Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Database Management System</h1>
+
+        <div class="form-section">
+
+            <label>First Name</label>
+            <input type="text" id="fname" placeholder="Enter First Name">
+
+            <label>Surname</label>
+            <input type="text" id="sname" placeholder="Enter Surname">
+
+            <label>Date of Birth</label>
+            <input type="date" id="dob">
+
+            <label>Gender</label>
+            <div class="gender-box">
+                <input type="radio" name="gender" value="Male" id="male">
+                <label for="male">Male</label>
+
+                <input type="radio" name="gender" value="Female" id="female">
+                <label for="female">Female</label>
+            </div>
+
+            <label>Address</label>
+            <input type="text" id="address" placeholder="Enter Address">
+
+            <label>Mobile</label>
+            <input type="text" id="mobile" placeholder="Enter Mobile Number">
+
+            <label>Course</label>
+            <input type="text" id="course" placeholder="Enter Course">
+
+        </div>
+
+        <div class="buttons">
+            <button id="submitBtn" onclick="addStudent()">Submit</button>
+            <button onclick="searchStudent()">Search</button>
+        </div>
+
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>First Name</th>
+                        <th>Surname</th>
+                        <th>DOB</th>
+                        <th>Gender</th>
+                        <th>Address</th>
+                        <th>Mobile</th>
+                        <th>Course</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="studentTableBody"></tbody>
+            </table>
+        </div>
+
+    </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
